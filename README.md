@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AdamModus/vuetiful-weather.svg?branch=master)](https://travis-ci.org/AdamModus/vuetiful-weather)
+
 # vuetiful-weather
 A demo weather app using VueJS
 
