@@ -2,7 +2,7 @@ module.exports = {
   preset: "@vue/cli-plugin-unit-jest/presets/typescript-and-babel",
   collectCoverage: true,
   collectCoverageFrom: [
-    "<rootDir>/src/**/*.{js,vue}",
+    "<rootDir>/src/**/*.{js,ts,vue}",
     "!<rootDir>/src/main.ts",
     "!<rootDir>/src/registerServiceWorker.ts"
   ],
