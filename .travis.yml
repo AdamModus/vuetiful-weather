@@ -4,3 +4,5 @@ node_js:
 cache: yarn
 script:
   - yarn run test:unit
+after_script:
+  - cat ./coverage/lcov.info | coveralls
