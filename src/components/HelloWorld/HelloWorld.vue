@@ -134,5 +134,5 @@
   </div>
 </template>
 
-<script src="./HelloWorld.ts" lang="ts"></script>
-<style src="./HelloWorld.css" scoped></style>
+<script src="./HelloWorld.component.ts" lang="ts"></script>
+<style src="./HelloWorld.component.css" scoped></style>
