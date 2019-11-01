@@ -1,0 +1,10 @@
+.unit-picker_group .unit-picker_radio:checked + label {
+  border: solid 2px green;
+  font-weight: bolder;
+}
+
+.unit-picker_group .unit-picker_radio {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}

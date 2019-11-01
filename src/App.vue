@@ -2,9 +2,12 @@
   <v-app>
     <!-- Start of toolbar -->
     <v-app-bar app>
+      <v-btn icon @click="themeButtonClicked">
+        <v-icon>mdi-invert-colors</v-icon>
+      </v-btn>
       <v-toolbar-title class="headline text-uppercase">
         <span>Vuetiful Weather</span>
-        <span class="font-weight-light">Powered by Vue/tify</span>
+        <span class="caption ml-2">Powered by Vue/tify</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -40,11 +43,28 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mapActions, mapState } from "vuex";
+import { IState } from "./store/state/index";
 
 export default Vue.extend({
   name: "App",
+  computed: {
+    ...mapState({
+      isDarkTheme: (state: IState) => state.theme.isDark
+    })
+  },
+  watch: {
+    isDarkTheme: function() {
+      this.$vuetify.theme.dark = this.isDarkTheme;
+    }
+  },
+  methods: {
+    ...mapActions(["switchTheme"]),
+    themeButtonClicked() {
+      this.switchTheme(this.isDarkTheme);
+    }
+  },
   data: () => ({
-    //
     drawer: false // Hide mobile side menu by default
   })
 });

@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Rafa Rulez</h1>
+    <UnitPicker></UnitPicker>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld/HelloWorld";
+import UnitPicker from "@/components/UnitPicker/UnitPicker";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    UnitPicker
   }
 };
 </script>

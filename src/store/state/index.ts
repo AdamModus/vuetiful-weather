@@ -1,4 +1,12 @@
-export default {};
+export default {
+  theme: {
+    isDark: true
+  }
+};
+
+export interface IState {
+  theme: { isDark: boolean };
+}
 
 // location {
 //     coordinates: {
