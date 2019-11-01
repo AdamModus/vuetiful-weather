@@ -1,5 +1,9 @@
-import themeActions from "./theme-actions";
+import locationActions from "./LocationActions";
+import temperatureUnitActions from "./TemperatureUnitActions";
+import themeActions from "./ThemeActions";
 
 export default {
-  ...themeActions
+  ...themeActions,
+  ...temperatureUnitActions,
+  ...locationActions
 };

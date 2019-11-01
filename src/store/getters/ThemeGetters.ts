@@ -1,7 +1,7 @@
 import { IState } from "../state/index";
 
 export default {
-  currentTheme(state: IState) {
+  theme(state: IState) {
     return state.theme.isDark;
   }
 };

@@ -1,5 +1,9 @@
-import theme_mutations from "./theme-mutations";
+import locationMutations from "./LocationMutations";
+import temperatureUnitMutations from "./TemperatureUnitMutations";
+import themeMutations from "./ThemeMutations";
 
 export default {
-  ...theme_mutations
+  ...themeMutations,
+  ...temperatureUnitMutations,
+  ...locationMutations
 };

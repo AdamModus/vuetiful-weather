@@ -1,5 +1,7 @@
-import themeGetters from "./theme-getters";
+import temperatureUnitGetters from "./TemperatureUnitGetters";
+import themeGetters from "./ThemeGetters";
 
 export default {
-  ...themeGetters
+  ...themeGetters,
+  ...temperatureUnitGetters
 };
