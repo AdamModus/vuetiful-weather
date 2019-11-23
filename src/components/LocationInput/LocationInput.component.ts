@@ -24,6 +24,7 @@ export default Vue.extend({
       this.setCity(this.cityInput);
     }
   },
+
   data: () => ({
     cityInput: ""
   })
