@@ -5,44 +5,15 @@ export default interface IForecasts {
 }
 
 export interface ICurrentWeatherForecast {
-  description: string;
-  iconId: number;
-  temperature: number;
-  minTemperature: number;
-  maxTemperature: number;
-  humidity: number;
-  // base Internal parameter
-  // main
-  // main.temp Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
-  // main.pressure Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
-  // main.humidity Humidity, %
-  // main.temp_min Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
-  // main.temp_max Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.
-  // main.sea_level Atmospheric pressure on the sea level, hPa
-  // main.grnd_level Atmospheric pressure on the ground level, hPa
-  // wind
-  // wind.speed Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.
-  // wind.deg Wind direction, degrees (meteorological)
-  // clouds
-  // clouds.all Cloudiness, %
-  // rain
-  // rain.1h Rain volume for the last 1 hour, mm
-  // rain.3h Rain volume for the last 3 hours, mm
-  // snow
-  // snow.1h Snow volume for the last 1 hour, mm
-  // snow.3h Snow volume for the last 3 hours, mm
-  // dt Time of data calculation, unix, UTC
-  // sys
-  // sys.type Internal parameter
-  // sys.id Internal parameter
-  // sys.message Internal parameter
-  // sys.country Country code (GB, JP etc.)
-  // sys.sunrise Sunrise time, unix, UTC
-  // sys.sunset Sunset time, unix, UTC
-  // timezone Shift in seconds from UTC
-  // id City ID
-  // name City name
-  // cod Internal parameter
+  description: string; // main type of weather
+  iconId: number; // id of weather icon (used for owfont)
+  temperature: number; // Temperature in Kelvin
+  minTemperature: number; // Min temperature in Kelvin
+  maxTemperature: number; // Max temperature in Kelvin
+  humidity: number; // Humidity percentage
+  pressure: number; // Atmospheric pressure in hPa (hectoPascal units)
+  windSpeed: number; // Wind speed in meter/sec
+  cloudiness: number; // Percentage of cloudiness
 }
 
 export interface ISixteenDayWeatherForecast {

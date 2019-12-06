@@ -59,10 +59,10 @@ interface FiveDayHourlyWeatherListItem {
     deg: number;
   };
   rain: {
-    "3h": number;
+    '3h': number;
   };
   snow: {
-    "3h": number;
+    '3h': number;
   };
   dt_txt: number;
 }
@@ -85,6 +85,14 @@ export interface CurrentWeatherDataResponse {
     gust: number;
   };
   clouds: Clouds;
+  rain: {
+    '1h': number;
+    '3h': number;
+  };
+  snow: {
+    '1h': number;
+    '3h': number;
+  };
   dt: number;
   timezone: number;
   sys: {
